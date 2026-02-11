@@ -1,0 +1,72 @@
+:root {
+  --talabat-orange: #ff5a00;
+  --talabat-orange-dark: #e65000;
+  --gray-900: #1f2937;
+  --gray-700: #374151;
+  --gray-500: #6b7280;
+  --gray-100: #f9fafb;
+  --gray-200: #e5e7eb;
+  --white: #ffffff;
+}
+
+
+
+.counter-display {
+  background: var(--white);
+  border: 1px solid var(--gray-200);
+  border-radius: 16px;
+  padding: 24px;
+  text-align: center;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.counter-label {
+  font-size: 0.875rem;
+  color: var(--gray-500);
+  margin-bottom: 8px;
+}
+
+.counter-value {
+  font-size: 3rem;
+  font-weight: 700;
+  color: var(--talabat-orange);
+}
+
+.counter-controls {
+  margin-top: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  padding: 14px 28px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.1s ease;
+}
+
+.btn:active {
+  transform: scale(0.97);
+}
+
+.btn.primary {
+  background: var(--talabat-orange);
+  color: white;
+}
+
+.btn.primary:hover {
+  background: var(--talabat-orange-dark);
+}
+
+.btn.secondary {
+  background: var(--gray-100);
+  color: var(--gray-700);
+}
+
+.btn.secondary:hover {
+  background: var(--gray-200);
+}
